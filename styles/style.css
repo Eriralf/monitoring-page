@@ -13,7 +13,6 @@
      --orange-dark:#ff5e20;
      --orange-white: #FF7517;
      --white: #f2f4fd;
-
 }
 
 body {
@@ -88,5 +87,111 @@ a {
      background: var(--white);
 }
 
+section {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     display: flex;
+     height: 85vh;
+     width: 100%;
+}
 
+.container {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     gap: 20px;
+     width: 65rem;
+}
 
+.left-container {
+     display: flex;
+     align-items: center;
+     height: 25rem;
+     width: 30rem;
+}
+
+.left-container h1{
+     font-size: 35pt;
+     color: var(--white);
+     font-weight: 600;
+}
+
+.left-container h3{
+     font-size: 12pt;
+     color: var(--white);
+     font-weight: 500;
+}
+
+.info-container {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     gap: 10px;
+}
+
+.info-container a {
+     margin-top: 10px;
+}
+
+.right-container {
+     position: relative;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     height: 25rem;
+     width: 25rem;
+     border-radius: 12px;
+}
+
+.video-container {
+     height: 25rem;
+     width: 20rem;
+}
+
+.video-container video {
+     height: 25rem;
+     width: 20rem;
+     object-fit: cover;
+     border-radius: 12px;
+}
+
+.framer {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     position: absolute;
+     height: 55px;
+     width: 55px;
+     background-color: var(--white);
+     border-radius: 4px;
+     padding: 5px;
+     box-shadow: 0px 8px 25px rgba(229, 102, 29, 0.192);
+}
+
+.shield {
+     right: 20px;
+     top: 25px;
+}
+
+.lock {
+     left: 20px;
+     bottom: 100px;
+}
+
+.cam {
+     right: 80px;
+     bottom: 20px;
+}
+
+.house {
+     left: 50px;
+     top: 50px;
+
+}
+
+.framer i {
+     font-size: 25pt;
+     color: var(--orange-dark);
+}

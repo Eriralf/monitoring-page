@@ -266,6 +266,20 @@ p {
      height: 5px;
 }
 
+.section-clients {
+     background-color: var(--white);
+     height: 15vh;
+}
+
+.section-clients .container {
+     flex-direction: column;
+}
+
+.content-clients {
+     display: flex;
+     gap: 3rem;
+     filter: grayscale(100%);
+}
 
 @keyframes slide1 {
      0% {

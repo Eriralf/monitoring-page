@@ -281,6 +281,69 @@ p {
      filter: grayscale(100%);
 }
 
+.section-service {
+     background: #ffedd5;
+}
+
+.service-content {
+     display: flex;
+     flex-direction: row;
+}
+
+.section-service .container {
+     flex-direction: column;
+     gap: 2.5rem;
+}
+
+.service-content div {
+     width: 50%;
+     
+}
+
+.service-box {
+     width: 100%;
+     display: flex;
+     flex-direction: row; 
+     gap: 10px;
+}
+
+.service-box-info {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     width: 100%;
+     height: 17rem;
+     background-color: white;
+     box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.096);
+     transition: 300ms;
+}
+
+.service-box-info:hover {
+     transform: scale(1.05);
+}
+
+.container-service-box {
+     display: flex;
+     flex-direction: column;
+     gap: 5px;
+     width: 80%;
+     height: 80%;
+}
+
+.container-service-box span {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     width: 50px;
+     height: 50px;
+     border-radius: 50%;
+     font-size: 20pt;
+     border: 1px solid var(--orange-dark);
+}
+.container-service-box span i {
+     color: var(--orange-dark);
+}
+
 @keyframes slide1 {
      0% {
           transform: translateY(0px) translateX(0px);

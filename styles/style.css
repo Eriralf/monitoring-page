@@ -10,9 +10,9 @@
 
 :root {
      font-family: 'Inter', sans-serif;
-     --orange-dark:#ff5e20;
+     --orange-dark: #ff5e20;
      --orange-white: #FF7517;
-     --bg-low-orange:#ffedd5;
+     --bg-low-orange: #ffedd5;
      --bg-white: #f2f4fd;
      --font-black: #262626;
      --border-gray-color: #e5e5e5;
@@ -37,7 +37,7 @@ nav {
      display: flex;
      align-items: center;
      flex-direction: row;
-     justify-content: space-between;  
+     justify-content: space-between;
 }
 
 nav ul {
@@ -115,13 +115,13 @@ section {
      width: 30rem;
 }
 
-.left-container h1{
+.left-container h1 {
      font-size: 35pt;
      color: var(--bg-white);
      font-weight: 600;
 }
 
-.left-container h3{
+.left-container h3 {
      font-size: 12pt;
      color: var(--bg-white);
      font-weight: 500;
@@ -177,7 +177,7 @@ section {
 .shield {
      right: 20px;
      top: 25px;
-     animation: slide2 5s cubic-bezier(.51,0,.41,1) infinite both;
+     animation: slide2 5s cubic-bezier(.51, 0, .41, 1) infinite both;
 }
 
 .lock {
@@ -189,13 +189,13 @@ section {
 .cam {
      right: 80px;
      bottom: 20px;
-     animation: slide3 6s ease infinite both; 
+     animation: slide3 6s ease infinite both;
 }
 
 .house {
      left: 50px;
      top: 50px;
-     animation: slide1 10s cubic-bezier(.51,0,.41,1) infinite both;
+     animation: slide1 10s cubic-bezier(.51, 0, .41, 1) infinite both;
 }
 
 .framer i {
@@ -226,13 +226,13 @@ p {
 }
 
 .right-container-center {
-     width: 100%; 
-     height: 100%; 
-     display: flex; 
+     width: 100%;
+     height: 100%;
+     display: flex;
      flex-direction: column;
      gap: 20px;
 }
-     
+
 .image-container {
      height: 20rem;
      width: 100%;
@@ -300,13 +300,13 @@ p {
 
 .service-content div {
      width: 50%;
-     
+
 }
 
 .service-box {
      width: 100%;
      display: flex;
-     flex-direction: row; 
+     flex-direction: row;
      gap: 10px;
 }
 
@@ -343,6 +343,7 @@ p {
      font-size: 20pt;
      border: 1px solid var(--orange-dark);
 }
+
 .container-service-box span i {
      color: var(--orange-dark);
 }
@@ -441,7 +442,7 @@ p {
      width: 50px;
      height: 50px;
      border-radius: 50%;
-     border:1px solid var(--orange-dark);
+     border: 1px solid var(--orange-dark);
      color: var(--orange-dark);
      font-size: 20pt;
 }
@@ -468,15 +469,15 @@ form textarea {
 }
 
 form input::placeholder,
-form textarea::placeholder{
+form textarea::placeholder {
      font-family: 'Inter', sans-serif;
      font-weight: 700;
 }
 
-textarea:focus, 
+textarea:focus,
 input:focus {
      outline: 0;
- }
+}
 
 form .form-btn-submit {
      cursor: pointer;
@@ -485,19 +486,74 @@ form .form-btn-submit {
      color: white;
      background: var(--orange-dark);
      transition: 300ms;
- }
+}
 
 form .form-btn-submit:hover {
      background: var(--orange-white);
- }
+}
+
+footer {
+     height: 35vh;
+     background: var(--font-black);
+}
+
+footer section {
+     height: 100%;
+}
+
+.section-footer {
+     display: flex;
+     flex-direction: column;
+     gap: 20px;
+}
+
+footer h1 {
+     color: var(--bg-white);
+     line-height: 25px
+}
+
+footer p {
+     color: var(--bg-white);
+}
+
+.footer-content {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     width: 100%;
+     justify-content: space-between;
+     padding-bottom: 30px;
+}
+
+.box-socials {
+     display: flex;
+     flex-direction: column;
+     gap: 10px;
+}
+
+.footer-socials-container {
+     display: flex;
+     justify-content: space-between;
+}
+
+.socials-icons {
+     font-size: 20pt;
+     color: white;
+}
+
+footer .container {
+     border-bottom: 1px solid var(--border-gray-color);
+}
 
 @keyframes slide1 {
      0% {
           transform: translateY(0px) translateX(0px);
      }
+
      40% {
           transform: translateY(-35px) translateX(-35px);
      }
+
      0% {
           transform: translateY(0px) translateX(0px);
      }
@@ -507,9 +563,11 @@ form .form-btn-submit:hover {
      0% {
           transform: translateY(0px) translateX(0px);
      }
+
      40% {
           transform: translateY(20px) translateX(0);
      }
+
      0% {
           transform: translateY(0px) translateX(0px);
      }
@@ -519,14 +577,12 @@ form .form-btn-submit:hover {
      0% {
           transform: translateY(0px) translateX(0px);
      }
+
      40% {
           transform: translateY(20px) translateX(20px);
      }
+
      0% {
           transform: translateY(0px) translateX(0px);
      }
 }
-
-
-   
-   

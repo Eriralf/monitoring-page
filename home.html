@@ -5,31 +5,35 @@
      <meta charset="UTF-8">
      <meta http-equiv="X-UA-Compatible" content="IE=edge">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>Document</title>
      <link rel="stylesheet" href="styles/style.css">
      <script src="https://unpkg.com/@phosphor-icons/web"></script>
+     <title>Monitoring | Soluções Avançadas de Segurança</title>
+     <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon">
 </head>
 
 <body>
-     <header>
+     <div id="progress-bar"></div>
+     <header id="header">
           <nav>
                <div>
-                    <img src="assets/logo.png" alt="logo">
+                    <a href="#s-home">
+                         <img src="assets/logo.png" alt="logo">
+                    </a>
                </div>
                <div>
                     <ul>
-                         <li><a class="navLink" href="#">Sobre Nós</a></li>
-                         <li><a class="navLink" href="#">Serviços</a></li>
-                         <li><a class="navLink" href="#">Depoimentos</a></li>
-                         <li><a class="navLink" href="#">Contato</a></li>
-                         <li><a id="btnLocation" href="#"> <span><i class="ph-fill ph-map-pin"></i></span> Endereço</a>
+                         <li><a class="navLink" href="#s-about">Sobre Nós</a></li>
+                         <li><a class="navLink" href="#s-service">Serviços</a></li>
+                         <li><a class="navLink" href="#s-depoiments">Depoimentos</a></li>
+                         <li><a class="navLink" href="#s-contact">Contato</a></li>
+                         <li><a id="btnLocation" href="#"> <span><i class="ph-fill ph-whatsapp-logo"></i></span> Solicite Orçamento</a>
                          </li>
                     </ul>
                </div>
           </nav>
      </header>
      <main>
-          <section class="section-home">
+          <section class="section-home" id="s-home">
                <div class="container">
                     <div class="left-container">
                          <div class="info-container">
@@ -37,7 +41,7 @@
                               <h3>Nossa equipe especializada está pronta para garantir sua segurança 24/7. Tenha
                                    tranquilidade total com a <strong>Monitoring.</strong>"</h3>
                               <br>
-                              <a id="btnLocation" href="#">Faça um orçamento</a>
+                              <a id="btnLocation" href="#">Proteja Agora! <span><i class="ph-fill ph-arrow-circle-right"></i></span></a>
                          </div>
                     </div>
                     <div class="right-container">
@@ -60,7 +64,7 @@
                     </div>
                </div>
           </section>
-          <section class="section-about">
+          <section class="section-about" id="s-about">
                <div class="container">
                     <div class="left-container">
                          <div class="about-content">
@@ -96,7 +100,7 @@
                     </div>
                </div>
           </section>
-          <section class="section-clients">
+          <section class="section-clients" id="s-clients">
                <div class="container">
                     <div>
                          <h4>Clientes que confiam em nosso trabalho</h4>
@@ -113,7 +117,7 @@
                     </div>
                </div>
           </section>
-          <section class="section-service">
+          <section class="section-service" id="s-service">
                <div class="container">
                     <div class="service-content">
                          <div>
@@ -154,7 +158,7 @@
                     </div>
                </div>
           </section>
-          <section class="section-depoiments">
+          <section class="section-depoiments" id="s-depoiments">
                <div class="container">
                     <div>
                          <h4># DEPOIMENTOS</h4>
@@ -238,7 +242,7 @@
                     </div>
                </div>
           </section>
-          <section class="section-contact">
+          <section class="section-contact" id="s-contact">
                <div class="container">
                     <div class="contact-content">
                          <div>
@@ -297,7 +301,8 @@
                                              <div><a href="#"><i class="ph ph-instagram-logo"></i></a></div>
                                         </div>
                                         <div class="socials-icons">
-                                             <div><a href="#" class="teste"><i class="ph ph-linkedin-logo"></i></a></div>
+                                             <div><a href="#" class="teste"><i class="ph ph-linkedin-logo"></i></a>
+                                             </div>
                                         </div>
                                         <div class="socials-icons">
                                              <div><a href="#"><i class="ph ph-github-logo"></i></a></div>
@@ -322,10 +327,12 @@
                               </div>
                          </div>
                     </div>
-                    <p class="">Made with &#129505; by <a href="https://www.linkedin.com/in/eriralfbarros/" target="_blank">Eriralf Barros.</a></p>
+                    <p class="">Made with &#129505; by <a href="https://www.linkedin.com/in/eriralfbarros/"
+                              target="_blank">Eriralf Barros.</a></p>
                </section>
           </footer>
      </main>
+     <script src="js/main.js"></script>
 </body>
 
 </html>

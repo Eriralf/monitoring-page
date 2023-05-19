@@ -12,7 +12,7 @@
      
 </head>
 
-<body>
+<body class="">
      <div id="progress-bar"></div>
      <header id="header">
           <nav class="nav-bar">
@@ -21,7 +21,7 @@
                          <img src="assets/logo.png" alt="logo">
                     </a>
                </div>
-               <div>
+               <div class="desktop-bar">
                     <ul>
                          <li><a class="navLink" href="#s-about">Sobre Nós</a></li>
                          <li><a class="navLink" href="#s-service">Serviços</a></li>
@@ -31,8 +31,19 @@
                          </li>
                     </ul>
                </div>
+               <span class="btn-hamburg-list" id="btn-hamburg-list"><i id="btn1" class="ph ph-list"></i></span>
           </nav>
      </header>
+     <div class="mobile-bar" id="mobile-bar">
+          <ul>
+               <li><a class="headline" href="#s-about">Sobre Nós</a></li>
+               <li><a class="headline" href="#s-service">Serviços</a></li>
+               <li><a class="headline" href="#s-depoiments">Depoimentos</a></li>
+               <li><a class="headline" href="#s-contact">Contato</a></li>
+               <li><a class="headline" id="btnLocation" href="#"> <span><i class="ph-fill ph-whatsapp-logo"></i></span> Solicite Orçamento</a>
+               </li>
+          </ul>
+     </div>
      <main>
           <section class="section-home" id="s-home">
                <div class="container">
@@ -258,7 +269,7 @@
                                    </div>
                                    <div>
                                         <h3>Horario de Funcionamento</h3>
-                                        <p> Presencial: Segunda a Sexta, das 08h às 18h <br>Ligação: 24h</p>
+                                        <p> Presencial: Segunda a Sexta, <br> das 08h às 18h <br>Ligação: 24h</p>
                                    </div>
                               </div>
                               <div class="container-contact-box">
@@ -276,12 +287,12 @@
                                    </div>
                                    <div>
                                         <h3>Localização</h3>
-                                        <p> Rua Lorem Ipsum, Pedro Alvares, 77960-000 - Brasil. </p>
+                                        <p> Rua Lorem Ipsum, Pedro Alvares, <br> 77960-000 - Brasil. </p>
                                    </div>
                               </div>
                          </div>
                     </div>
-                    <div class="">
+                    <div class="content-form-box">
                          <form action="#">
                               <input type="text" name="name" id="" placeholder="Nome" autocomplete="off" required>
                               <input type="email" name="email" id="" placeholder="Email" autocomplete="off" required>

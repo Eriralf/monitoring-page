@@ -23,7 +23,6 @@ html {
 }
 
 body {
-     height: 100vh;
      background: linear-gradient(180deg, #ff5e20, #FF7517);
 }
 
@@ -37,7 +36,7 @@ header {
      align-items: center;
      justify-content: center;
      display: flex;
-     z-index: 1;
+     z-index: 10;
      transition: 300ms;
 }
 
@@ -52,7 +51,7 @@ header {
      top: 0%;
      position: fixed;
      background-color: var(--bg-white);
-     z-index: 10;
+     z-index: 100;
 
 }
 
@@ -571,6 +570,43 @@ footer p {
      color: white;
 }
 
+.btn-hamburg-list {
+     display: none;
+     cursor: pointer;
+     font-size: 30pt;
+     color: var(--bg-white);
+     padding: 5px 10px;
+     border: 1px solid var(--orange-white);
+}
+
+.mobile-bar {
+     display: none;
+}
+
+.mobile-bar ul {
+     width: 100%;
+     height: 45vh;
+     padding-top: 15%;
+     position: fixed;
+     z-index: 1;
+     background: linear-gradient(180deg, #ff5e20, #FF7517);
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-direction: column;
+     font-size: 15pt;
+     gap: 5%;
+     transition: 300ms;
+}
+
+.allowMenu {
+     display: block;
+}
+
+.hiddenBody {
+     overflow-y: hidden;
+}
+
 footer .container {
      border-bottom: 1px solid var(--border-gray-color);
 }
@@ -615,4 +651,134 @@ footer .container {
      0% {
           transform: translateY(0px) translateX(0px);
      }
+}
+
+@media screen and (max-width: 1100px){
+
+     .nav-bar,
+     .container {
+          width: 90%;
+     }
+
+     .section-clients .container,
+     .depoiments-content{
+          overflow: auto;
+     }
+
+     .desktop-bar ul {
+          gap: 25px;
+     }
+}
+
+@media screen and (max-width: 850px) {
+
+     .btn-hamburg-list {
+          display: block;
+     }
+
+     body,
+     section {
+          width: 100%;
+     }
+
+     header {
+          height: 10%;
+     }
+
+     .left-container h1 {
+          text-align: center;
+          font-size: 30pt;
+          line-height: 1;
+     }
+
+     .left-container h3{
+          text-align: center;
+     }
+
+     .nav-bar,
+     .container {
+          width: 80%;
+     }
+
+     .video-container {
+          width: 100%;
+          height: 100%;
+          border-radius: unset;
+     }
+
+     .video-container video {
+          width: 100%;
+          border-radius: unset;
+     }
+
+     .section-home .container,
+     .section-about .container,
+     .section-service .container,
+     .section-depoiments .container,
+     .section-contact .container,
+     .section-footer .container{
+          padding: 30% 0px 20% 0px;
+          flex-direction: column;
+          width: 80%;
+     }
+
+     .left-container,
+     .right-container,
+     .section-service,
+     .section-depoiments,
+     .section-contact,
+     footer {
+          height: 50%;
+          width: 100%;
+     }
+
+     .section-home,
+     .section-about,
+     .section-clients,
+     .section-depoiments,
+     .section-contact {
+          height: 100%;
+     }
+
+     .section-clients .container,
+     .depoiments-content{
+          overflow: auto;
+     }
+
+     .depoiments-box-info {
+          width: auto;
+     }
+
+     .section-service .service-content {
+          flex-direction: column;
+     }
+
+     .service-content div {
+          width: 100%;
+     }
+
+     .service-box {
+          flex-wrap: wrap;
+     }
+
+     .desktop-bar,
+     footer img  {
+          display: none;
+     }
+
+     .container,
+     .section-contact .content-form-box,
+     .section-contact form {
+          width: 100%;
+     }
+
+     .container-contact-box h3 {
+          font-size: 12pt;
+     }
+
+     .container-contact-box p {
+          font-size: 10pt;
+          inline-size: 90%;
+     }
+
 }
